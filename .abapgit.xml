@@ -3,7 +3,6 @@
  <asx:values>
   <DATA>
    <MASTER_LANGUAGE>E</MASTER_LANGUAGE>
-   <STARTING_FOLDER>/DMO/RAP</STARTING_FOLDER>
   </DATA>
  </asx:values>
 </asx:abap>
