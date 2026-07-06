@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<appdescr:Application xmlns:appdescr="http://www.sap.com/sapui5/technomap"
+                       xmlns:app="http://www.sap.com/sapui5/optimized">
+  <appdescr:identification>
+    <appdescr:id>zscort.v1.objectfinder</appdescr:id>
+    <appdescr:title>SCORT V1 - Object Finder</appdescr:title>
+    <appdescr:description>Object-centric search (Mode 1) for SAP Repository Objects</appdescr:description>
+    <appdescr:icon/>
+    <appdescr:rights/>
+  </appdescr:identification>
+
+  <appdescr:interfaces/>
+
+  <appdescr:catalogs>
+    <appdescr:Catalog id="zscort_v1_catalog" title="SCORT V1 Catalog" />
+  </appdescr:catalogs>
+
+  <appdescr:pages>
+    <appdescr:Page id="zscort_v1_objfinder_page"
+                   title="SCORT V1 - Object Finder"
+                   description="Object-centric search (Mode 1)"
+                   navigationComponent="zscort.v1.objectfinder"
+                   boundObjectType="">
+      <appdescr:SemanticObject>ScortObject</appdescr:SemanticObject>
+      <appdescr:Action>display</appdescr:Action>
+      <appdescr:Parameters/>
+    </appdescr:Page>
+  </appdescr:pages>
+
+  <appdescr:pageSets>
+    <appdescr:PageSet id="zscort_v1_pageset">
+      <appdescr:Pages>
+        <appdescr:PageReference pageId="zscort_v1_objfinder_page" />
+      </appdescr:Pages>
+    </appdescr:PageSet>
+  </appdescr:pageSets>
+
+  <appdescr:tiles>
+    <appdescr:Tile id="zscort_v1_objfinder_tile"
+                   title="SCORT V1 - Object Finder"
+                   subtitle="Object-centric search (Mode 1)"
+                   size="1x1"
+                   targetPage="zscort_v1_objfinder_page"
+                   icon="sap-icon://search">
+      <appdescr:Keywords>
+        <appdescr:Keyword>SCORT</appdescr:Keyword>
+        <appdescr:Keyword>Object</appdescr:Keyword>
+        <appdescr:Keyword>Finder</appdescr:Keyword>
+      </appdescr:Keywords>
+    </appdescr:Tile>
+  </appdescr:tiles>
+
+  <appdescr:groups>
+    <appdescr:Group id="zscort_v1_group"
+                    title="SCORT V1 - Repository Object Management">
+      <appdescr:TileSize>
+        <appdescr:Size width="1" height="1" tileId="zscort_v1_objfinder_tile" />
+      </appdescr:TileSize>
+    </appdescr:Group>
+  </appdescr:groups>
+
+  <appdescr:targetMappings>
+    <appdescr:TargetMapping id="zscort_v1_target"
+                            enabled="true"
+                            applicationId="zscort.v1.objectfinder"
+                            semanticObject="ScortObject"
+                            action="display"
+                            title="SCORT V1 - Object Finder"
+                            parametersResolutionMode="resolveSemanticObject">
+    </appdescr:TargetMapping>
+  </appdescr:targetMappings>
+</appdescr:Application>

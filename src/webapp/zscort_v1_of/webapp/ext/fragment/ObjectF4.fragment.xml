@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FragmentDefinition xmlns="sap.ui.core"
+                    xmlns:smartField="sap.ui.comp.smartfield"
+                    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+                    xmlns:smartTable="sap.ui.comp.smarttable">
+
+  <Dialog id="ObjectF4Dialog"
+          title="{i18n>vh.objectName}"
+          busyIndicatorDelay="0"
+          resizable="true"
+          draggable="true"
+          contentWidth="60rem"
+          contentHeight="40rem">
+    <content>
+      <smartTable:SmartTable id="ObjectF4Table"
+                             entitySet="ZI_SCORT_V1_OBJ_NAME_VH"
+                             smartFilterId="ObjectF4FilterBar"
+                             tableType="Table"
+                             useVariantManagement="false"
+                             useTablePersonalisation="true"
+                             header="{i18n>vh.objectName}"
+                             showRowCount="true"
+                             enableAutoBinding="true"
+                             persistedStateKey="ObjectF4Table">
+        <smartTable:layoutData>
+          <FlexItemData growFactor="1" />
+        </smartTable:layoutData>
+      </smartTable:SmartTable>
+    </content>
+    <beginButton>
+      <Button id="CloseF4" text="Close" press="onCloseObjectF4" />
+    </beginButton>
+  </Dialog>
+
+</FragmentDefinition>

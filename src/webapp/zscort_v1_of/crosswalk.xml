@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<crosswalks>
+  <sap:edmx:Edmx
+    xmlns:sap="http://www.sap.com/Protocols/SAPData"
+    xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+    Version="4.0">
+    <sap:Reference
+      Uri="/sap/opu/odata4/sap/zscort_v1_obj_ui/srvd/sap/zscort_v1_obj_ui/0001/$metadata"
+      UriMeanings="OData V4 Service Definition">
+      <edmx:Include Namespace="ZSCORT_V1_OBJ_UI" />
+    </sap:Reference>
+  </sap:edmx:Edmx>
+
+  <serviceId>ZSCORT_V1_OBJ_UI</serviceId>
+  <serviceVersion>0001</serviceVersion>
+  <serviceName>SCORT V1 - Object Management (Object-centric mode)</serviceName>
+
+  <appId>zscort.v1.objectfinder</appId>
+  <componentId>zscort_v1_objfinder</componentId>
+</crosswalks>

@@ -1,0 +1,35 @@
+# abapGit project folder
+/.abapgit_backup
+/.abapgit.xml.bak
+
+# OS junk
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor / IDE
+/.vscode/
+/.idea/
+*.swp
+*.swo
+*~
+*.tmp
+
+# Build output
+/bin/
+/obj/
+/dist/
+/build/
+
+# Node / npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Local environment
+.env
+.env.local
+*.log

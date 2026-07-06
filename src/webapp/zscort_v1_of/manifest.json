@@ -1,0 +1,45 @@
+{
+  "_version": "1.0.0",
+  "sap.app": {
+    "id": "zscort.v1.objectfinder",
+    "type": "application",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "SCORT V1 - Object Finder",
+    "subTitle": "Object-centric search (Mode 1)",
+    "i18n": "i18n/i18n.properties",
+    "dataSources": {
+      "mainService": {
+        "uri": "/sap/opu/odata4/sap/zscort_v1_obj_ui/srvd/sap/zscort_v1_obj_ui/0001/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0",
+          "annotations": ["annotation"]
+        }
+      },
+      "annotation": {
+        "uri": "annotations/annotation.xml",
+        "type": "ODataAnnotation"
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "Fiori",
+    "fullWidth": true,
+    "supportedThemes": [
+      "sap_horizon",
+      "sap_fiori_3"
+    ]
+  },
+  "sap.ui5": {
+    "flexibleColumnLayout": {
+      "defaultTwoColumnLayoutType": "TwoColumnsMidExpanded"
+    }
+  },
+  "sap.fiori": {
+    "registrationIds": [],
+    "archeType": "transactional-object",
+    "isDeltaEnabled": false
+  }
+}

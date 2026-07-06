@@ -1,0 +1,18 @@
+{
+  "identifier": {
+    "id": "zscort.v1.objectfinder",
+    "scp": false
+  },
+  "version": "1.0.0",
+  "modules": [
+    {
+      "name": "zscort_v1_objfinder",
+      "path": "webapp",
+      "niceName": "SCORT V1 - Object Finder"
+    }
+  ],
+  "authentication": {
+    "method": "Form"
+  },
+  "resources": "annotations/annotation.xml"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx"
+           Version="4.0">
+  <edmx:Reference Uri="/sap/opu/odata4/sap/zscort_v1_obj_ui/srvd/sap/zscort_v1_obj_ui/0001/$metadata">
+    <edmx:Include Namespace="ZSCORT_V1_OBJ_UI" />
+  </edmx:Reference>
+  <edmx:Reference Uri="https://wiki.scn.sap.com/wiki/display/ABAP/OData+V4+Annotations" UriMeanings="SAP">
+    <edmx:Include Alias="com.sap.vocabularies.UI.v1" Namespace="com.sap.vocabularies.UI.v1" />
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="zscort.v1.objfinder.annot">
+      <Annotations Target="ZSCORT_V1_OBJ_UI.ZI_SCORT_V1_OBJ_3M">
+        <Annotation Term="UI.SelectionFields">
+          <Collection>
+            <PropertyPath>ObjName</PropertyPath>
+            <PropertyPath>Object</PropertyPath>
+            <PropertyPath>Devclass</PropertyPath>
+          </Collection>
+        </Annotation>
+        <Annotation Term="UI.QuickVariantSelection">
+          <Collection>
+            <Record Type="UI.QuickVariantSelectionVariant">
+              <PropertyValue Property="Key" String="All" />
+              <PropertyValue Property="Label" String="All Objects" />
+            </Record>
+          </Collection>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSCORT_V1_OBJ_UI.ZI_SCORT_V1_OBJ_3M/ObjName">
+        <Annotation Term="UI.HiddenFilter" Bool="false" />
+      </Annotations>
+
+      <Annotations Target="ZSCORT_V1_OBJ_UI.ZI_SCORT_V1_OBJ_3M/Object">
+        <Annotation Term="Common.ValueList">
+          <Record Type="Common.ValueListType">
+            <PropertyValue Property="Label" String="Object Type" />
+            <PropertyValue Property="CollectionPath" String="ZI_SCORT_V1_OBJ_NAME_VH" />
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="Common.ValueListParameterOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="Object" />
+                  <PropertyValue Property="ValueListProperty" String="Object" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSCORT_V1_OBJ_UI.ZI_SCORT_V1_OBJ_3M/Devclass">
+        <Annotation Term="Common.ValueList">
+          <Record Type="Common.ValueListType">
+            <PropertyValue Property="Label" String="Package" />
+            <PropertyValue Property="CollectionPath" String="ZI_SCORT_V1_PKG" />
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="Common.ValueListParameterOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="Devclass" />
+                  <PropertyValue Property="ValueListProperty" String="Devclass" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+
+      <Annotations Target="ZSCORT_V1_OBJ_UI.ZI_SCORT_V1_OBJ_3M/Author">
+        <Annotation Term="Common.ValueList">
+          <Record Type="Common.ValueListType">
+            <PropertyValue Property="Label" String="Owner (Person Resp.)" />
+            <PropertyValue Property="CollectionPath" String="ZI_SCORT_V1_OWNER" />
+            <PropertyValue Property="Parameters">
+              <Collection>
+                <Record Type="Common.ValueListParameterOut">
+                  <PropertyValue Property="LocalDataProperty" PropertyPath="Author" />
+                  <PropertyValue Property="ValueListProperty" String="Bname" />
+                </Record>
+              </Collection>
+            </PropertyValue>
+          </Record>
+        </Annotation>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
